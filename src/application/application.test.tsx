@@ -4,8 +4,23 @@ import  Application  from "./application";
 describe('Application', () => {
     test('renders correctly', () => {
         render(<Application />);
-        const nameElement = screen.getByRole("textbox");
+
+        const headingElement = screen.getByRole("heading", {
+            level: 1
+        })
+
+        const sectionElememt = screen.getByRole("heading", {
+            level: 2
+        })
+
+        const nameElement = screen.getByRole("textbox", {
+            name: 'Name'
+        });
         expect(nameElement).toBeInTheDocument();
+
+        const bioElement = screen.getByRole("textbox", {
+            name: 'Bio'
+        })
         
         const jobLocationElement = screen.getByRole("combobox");
         expect(jobLocationElement).toBeInTheDocument();
