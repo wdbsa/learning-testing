@@ -4,6 +4,7 @@ const Application = () => {
             <h1>Application Form</h1>
             <h2>Section heading</h2>
             <p>All fields are mandatory</p>
+            <img src="..." alt="hello work" />
           <form>
             <div>
                 <label htmlFor="name">Name</label>

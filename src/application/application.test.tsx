@@ -8,10 +8,15 @@ describe('Application', () => {
         const headingElement = screen.getByRole("heading", {
             level: 1
         })
+        expect(headingElement).toBeInTheDocument();
 
         const sectionElememt = screen.getByRole("heading", {
             level: 2
         })
+        expect(sectionElememt).toBeInTheDocument();
+
+        const imageElement = screen.getByAltText("hello work");
+        expect(imageElement).toBeInTheDocument();
 
         const paragraphElement = screen.getByText("All fields are mandatory");
         expect(paragraphElement).toBeInTheDocument();
