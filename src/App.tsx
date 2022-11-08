@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Application from './application/application';
+import Counter from './counter/counter';
 import Skills from './skills/skills';
 import { SkillProps } from './skills/skills.types';
 
@@ -12,9 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Application /> */}
+       {/* <Application />
+      <Skills skills={strArr.skills}/> */}
 
-      <Skills skills={strArr.skills}/>
+      <Counter />
     </div>
   );
 }
