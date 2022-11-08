@@ -4,6 +4,8 @@ import Application from './application/application';
 import Counter from './counter/counter';
 import Skills from './skills/skills';
 import { SkillProps } from './skills/skills.types';
+import Providers from './providers/providers';
+import   MuiMode  from './components/mui/mui-mode';
 
 function App() {
   const strArr: SkillProps = {
@@ -12,13 +14,14 @@ function App() {
 
 
   return (
-    <div className="App">
-       {/* <Application />
-      <Skills skills={strArr.skills}/> */}
+    <Providers>
+      <div className="App"> 
+        <MuiMode />
+      </div>
+    </Providers>
+  )
 
-      <Counter />
-    </div>
-  );
+
 }
 
 export default App;
