@@ -2,3 +2,4 @@
 
 - learn jest and react-testing library in react typescript app
 - practicing rtl and jest queries
+- mock service worker setup and error handling
